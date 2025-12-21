@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="project">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.summary %}
+    <p class="project-summary">{{ page.summary }}</p>
+  {% endif %}
+
+  {{ content }}
+</article>
