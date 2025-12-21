@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p class="hero-subtitle">
+    Analyst working with production data, metrics validation, and decision-oriented reporting.
+  </p>
+</section>
+
+<section class="about-brief">
+  {{ content }}
+</section>
+
+<section class="featured-projects">
+  <h2>Selected Projects</h2>
+
+  {% assign featured = site.projects | where: "featured", true | slice: 0, 3 %}
+  {% for project in featured %}
+    <div class="project-card">
+      <h3>
+        <a href="{{ project.url }}">{{ project.title }}</a>
+      </h3>
+      <p>{{ project.summary }}</p>
+    </div>
+  {% endfor %}
+
+  <p class="view-all">
+    <a href="{{ '/projects' | relative_url }}">View all projects →</a>
+  </p>
+</section>
+
+<section class="cta">
+  <a class="cta-button" href="{{ '/assets/resume/resume.pdf' }}">
+    View Resume
+  </a>
+</section>
