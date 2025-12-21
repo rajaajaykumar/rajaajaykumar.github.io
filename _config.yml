@@ -1,0 +1,33 @@
+title: Title
+description: A Brief Description.
+url: ""
+baseurl: ""
+
+markdown: kramdown
+theme: null
+highlighter: rouge
+
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  posts:
+    output: true
+    permalink: /writing/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+exclude:
+  - README.md
