@@ -1,7 +1,13 @@
-title: Title
-description: A Brief Description.
-url: ""
+title: Raja Ajay Kumar
+description: Data Analyst working with production data, focused on metric reliability and decision-driven insights.
+url: "https://rajaajaykumar.github.io"
 baseurl: ""
+
+email: "therajaajay@gmail.com"
+linkedin_url: "https://linkedin.com/in/rajaajaykumar"
+github_url: "https://github.com/rajaajaykumar"
+github_repo: "rajaajaykumar.github.io"
+resume: "/assets/resume/RajaAjayKumar_Analyst_Resume.pdf"
 
 markdown: kramdown
 theme: null
